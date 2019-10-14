@@ -14,4 +14,8 @@ object BuildProperties {
         const val targetSdkVersion = 28
         const val buildToolsVersion = "29.0.2"
     }
+
+    object Logging {
+        const val tag = "\"BASE\""
+    }
 }

@@ -12,42 +12,53 @@ object Dependencies {
         const val coreKtx = "androidx.core:core-ktx:${Versions.androidSupport}"
     }
 
+    object Koin {
+        const val android = "org.koin:koin-android:${Versions.koin}"
+        const val scope = "org.koin:koin-androidx-scope:${Versions.koin}"
+        const val viewModel = "org.koin:koin-androidx-viewmodel:${Versions.koin}"
+    }
+
     object Arch {
 
         object Lifecycle {
-            val runtime = "androidx.lifecycle:lifecycle-runtime:${Versions.archLifecycle}"
-            val extensions = "androidx.lifecycle:lifecycle-extensions:${Versions.archLifecycle}"
-            val liveData = "androidx.lifecycle:lifecycle-livedata:${Versions.archLifecycle}"
-            val viewModel = "androidx.lifecycle:lifecycle-viewmodel:${Versions.archLifecycle}"
-            val viewModelKotlinExts = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.archLifecycle}"
+            const val runtime = "androidx.lifecycle:lifecycle-runtime:${Versions.archLifecycle}"
+            const val extensions = "androidx.lifecycle:lifecycle-extensions:${Versions.archLifecycle}"
+            const val liveData = "androidx.lifecycle:lifecycle-livedata:${Versions.archLifecycle}"
+            const val viewModel = "androidx.lifecycle:lifecycle-viewmodel:${Versions.archLifecycle}"
+            const val viewModelExts = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.archLifecycle}"
+            const val compiler = "androidx.lifecycle:lifecycle-compiler:${Versions.archLifecycle}"
         }
 
     }
 
     object Test {
 
-        val junit = "junit:junit:${Versions.junit}"
-        val androidTestRunner = "com.android.support.test:runner:${Versions.androidTestRunner}"
-        val espresso = "com.android.support.test.espresso:espresso-core:${Versions.espresso}"
+        const val junit = "junit:junit:${Versions.junit}"
+        const val androidTestRunner = "com.android.support.test:runner:${Versions.androidTestRunner}"
+        const val espresso = "com.android.support.test.espresso:espresso-core:${Versions.espresso}"
+        const val koin = "org.koin:koin-test:${Versions.koin}"
 
     }
 
-//    object RxJava2 {
-//        val core = "io.reactivex.rxjava2:rxjava:${Versions.rxJava2}"
-//        val android = "io.reactivex.rxjava2:rxandroid:${Versions.rxAndroid}"
-//        val kotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlin}
-//    }
+    object Rx {
+        const val core = "io.reactivex.rxjava2:rxjava:${Versions.Rx.java}"
+        const val android = "io.reactivex.rxjava2:rxandroid:${Versions.Rx.android}"
+        const val kotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.Rx.kotlin}"
+    }
 
-//    val threeTenAbp = "com.jakewharton.threetenabp:threetenabp:${Versions.threeTenAbp}"
-//
-//    object OkHttp3 {
-//        val loggingIntercepter = "com.squareup.okhttp3:logging-interceptor:3.9.1"
-//    }
-//
-//    object Retrofit {
-//        val core = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
-//        val converterMoshi = "com.squareup.retrofit2:converter-moshi:${Versions.retrofit}"
-//        val adapterRxJava2 = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
-//    }
+    const val threeTenAbp = "com.jakewharton.threetenabp:threetenabp:${Versions.threeTenAbp}"
+
+    const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
+
+    object OkHttp {
+        const val core = "com.squareup.okhttp3:okhttp:${Versions.okHttp}"
+        const val logging = "com.squareup.okhttp3:logging-interceptor:${Versions.okHttp}"
+    }
+
+    object Retrofit {
+        const val core = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+        const val converterMoshi = "com.squareup.retrofit2:converter-moshi:${Versions.retrofit}"
+        const val adapterRxJava2 = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
+    }
 
 }
