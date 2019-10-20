@@ -11,7 +11,7 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import timber.log.Timber
 
-class BaseApplication : Application() {
+class AppNameApplication : Application() {
 
     private val loggingTree: Timber.Tree by inject()
 
@@ -20,7 +20,7 @@ class BaseApplication : Application() {
         initDateTime()
 
         startKoin {
-            androidContext(this@BaseApplication)
+            androidContext(this@AppNameApplication)
             if (BuildConfig.DEBUG) {
                 androidLogger()
             }

@@ -1,11 +1,52 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="Theme.AppName" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorOnPrimary">@color/primaryOn</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/secondaryOn</item>
+
+        <item name="textAppearanceHeadline5">@style/TextAppearance.AppName.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.AppName.Headline6</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AppName.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.AppName.Body2</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.AppName.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.AppName.Subtitle2</item>
+    </style>
+
+    <style name="TextAppearance.AppName.Toolbar.Collapsed" parent="TextAppearance.AppName.Headline6">
+        <item name="fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#00000000</item>
+    </style>
+
+    <style name="TextAppearance.AppName.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppName.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="TextAppearance.AppName.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/hind_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppName.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/hind_semibold</item>
+    </style>
+
+    <style name="TextAppearance.AppName.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/hind</item>
+    </style>
+
+    <style name="TextAppearance.AppName.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/hind</item>
     </style>
 
 </resources>

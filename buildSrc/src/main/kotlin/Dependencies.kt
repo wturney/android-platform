@@ -6,6 +6,8 @@ object Dependencies {
 
     const val kotlinJdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
 
+    const val materialDesign = "com.google.android.material:material:${Versions.materialDesign}"
+
     object Support {
         const val appCompat = "androidx.appcompat:appcompat:${Versions.androidSupport}"
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"

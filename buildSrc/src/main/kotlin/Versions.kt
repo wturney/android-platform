@@ -2,6 +2,7 @@ object Versions {
 
     const val gradle = "3.5.1"
     const val kotlin = "1.3.50"
+    const val materialDesign = "1.1.0-beta01"
     const val androidSupport = "1.1.0"
     const val constraintLayout = "1.1.3"
     const val archLifecycle = "2.1.0"

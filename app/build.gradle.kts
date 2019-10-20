@@ -1,4 +1,4 @@
-import java.util.Properties
+import java.util.*
 
 plugins {
     id("com.android.application")
@@ -12,7 +12,11 @@ val debugKeystoreProperties = Properties().apply {
 }
 
 val releaseKeystoreProperties = Properties().apply {
-    load(rootProject.file(System.getenv("KEYSTORE_PATH") ?: "app/deploy/debug/keystore.properties").inputStream())
+    load(
+        rootProject.file(
+            System.getenv("KEYSTORE_PATH") ?: "app/deploy/debug/keystore.properties"
+        ).inputStream()
+    )
 }
 
 android {
@@ -92,6 +96,13 @@ android {
 dependencies {
     // Platform
     implementation(Dependencies.kotlinJdk7)
+
+    // Debug Drawer
+    implementation(project(":debug-drawer-base"))
+    debugImplementation(project(":debug-drawer-common"))
+
+    // Material Design
+    implementation(Dependencies.materialDesign)
 
     // Support
     implementation(Dependencies.Support.appCompat)

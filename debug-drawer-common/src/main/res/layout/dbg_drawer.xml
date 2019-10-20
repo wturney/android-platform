@@ -13,6 +13,7 @@
         android:layout_width="@dimen/drawer_width"
         android:layout_height="match_parent"
         android:layout_gravity="end"
+        android:background="?colorSurface"
         android:clipToPadding="false" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

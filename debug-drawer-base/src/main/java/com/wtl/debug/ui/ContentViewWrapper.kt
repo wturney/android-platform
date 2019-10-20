@@ -1,4 +1,4 @@
-package com.wtl.base.ui
+package com.wtl.debug.ui
 
 import android.view.ViewGroup
 import androidx.fragment.app.FragmentActivity
@@ -9,9 +9,4 @@ interface ContentViewWrapper {
      * E.g. wrapping the actual content with a debug DrawerLayout
      */
     fun wrap(activity: FragmentActivity): ViewGroup
-}
-
-class DefaultContentViewWrapper : ContentViewWrapper {
-    override fun wrap(activity: FragmentActivity): ViewGroup =
-        activity.findViewById(android.R.id.content)
 }
