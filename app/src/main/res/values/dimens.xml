@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="toolbar_expanded_height">180dp</dimen>
+    <dimen name="toolbar_expanded_height">90dp</dimen>
+    <dimen name="resume_hobby_tile_width">120dp</dimen>
+    <dimen name="resume_hobby_icon_height">120dp</dimen>
+    <dimen name="resume_employer_tile_width">220dp</dimen>
+    <dimen name="resume_employer_icon_height">120dp</dimen>
+    <dimen name="round_corner_radius">4dp</dimen>
 </resources>

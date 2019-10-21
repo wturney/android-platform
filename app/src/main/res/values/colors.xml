@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="surface">#ffffff</color>
-    <color name="primary">#dcedc8</color>
-    <color name="primaryLight">#fffffb</color>
-    <color name="primaryDark">#aabb97</color>
-    <color name="secondary">#dcedc8</color>
-    <color name="secondaryLight">#fffffb</color>
-    <color name="secondaryDark">#aabb97</color>
+    <color name="primary">#8bc34a</color>
+    <color name="primaryLight">#aed581</color>
+    <color name="primaryDark">#5a9216</color>
+    <color name="secondary">#8bc34a</color>
+    <color name="secondaryLight">#aed581</color>
+    <color name="secondaryDark">#5a9216</color>
     <color name="primaryOn">#000000</color>
     <color name="secondaryOn">#ffffff</color>
+
+    <color name="imagePlaceholder">#15000000</color>f
+
+    <color name="employerTred">#A8E2FF</color>
+    <color name="employerRei">#CCE7BB</color>
+
+    <color name="hobbyCycling">#D5C2B2</color>
+    <color name="hobbySnow">#D1E3EC</color>
+    <color name="hobbyBass">#B5A9D3</color>
+    <color name="hobbyDota">#CE9191</color>
 </resources>

@@ -140,6 +140,9 @@ dependencies {
     // Logging
     implementation(Dependencies.timber)
 
+    // Images
+    implementation(Dependencies.Glide.core)
+
     // Unit Tests
     testImplementation(Dependencies.Test.junit)
 

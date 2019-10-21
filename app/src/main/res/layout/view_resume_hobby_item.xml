@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/resume_hobby_tile_width"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:defaultFocusHighlightEnabled="false"
+    android:focusable="true"
+    android:orientation="vertical"
+    tools:ignore="UseCompoundDrawables">
+
+    <ImageView
+        android:id="@+id/hobbyIconView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/resume_hobby_icon_height"
+        android:background="@drawable/bkg_icon_placeholder"
+        android:backgroundTint="@color/imagePlaceholder"
+        android:contentDescription="@string/resume_hobby_icon_cd"
+        android:duplicateParentState="true"
+        android:foreground="@drawable/bkg_selectable_rounded"
+        android:importantForAccessibility="no"
+        android:scaleType="centerInside"
+        android:tint="#FFF"
+        tools:src="@drawable/ic_dota2_60dp" />
+
+    <TextView
+        android:id="@+id/hobbyNameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_very_small"
+        android:ellipsize="end"
+        android:visibility="gone"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:textAppearance="@style/TextAppearance.AppName.Body1"
+        tools:text="Recreational Equipment Inc." />
+
+</LinearLayout>

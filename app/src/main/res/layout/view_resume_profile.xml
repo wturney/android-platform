@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/act_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:paddingBottom="@dimen/spacing_small"
+        android:text="@string/resume_profile_header"
+        android:textAppearance="?textAppearanceOverline" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/spacing_medium"
+        android:paddingEnd="@dimen/spacing_medium"
+        android:text="@string/resume_profile_description"
+        android:textAppearance="@style/TextAppearance.AppName.Body1" />
+</merge>

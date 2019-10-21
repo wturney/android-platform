@@ -4,6 +4,10 @@ object Dependencies {
         const val gradle = "com.android.tools.build:gradle:${Versions.gradle}"
     }
 
+    object Glide {
+        const val core = "com.github.bumptech.glide:glide:${Versions.glide}"
+    }
+
     const val kotlinJdk7 = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
 
     const val materialDesign = "com.google.android.material:material:${Versions.materialDesign}"
