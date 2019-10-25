@@ -6,7 +6,8 @@
     android:clickable="true"
     android:defaultFocusHighlightEnabled="false"
     android:focusable="true"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppName.Button.Mono">
 
     <ImageView
         android:id="@+id/employerLogoView"
@@ -20,7 +21,7 @@
         android:padding="@dimen/spacing_medium"
         android:scaleType="centerInside"
         android:tint="#FFF"
-        tools:src="@drawable/ic_rei_160dp" />
+        tools:src="@drawable/ic_employer_120dp" />
 
     <TextView
         android:id="@+id/employerNameView"

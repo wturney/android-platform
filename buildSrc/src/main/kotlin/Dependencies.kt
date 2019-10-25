@@ -12,6 +12,8 @@ object Dependencies {
 
     const val materialDesign = "com.google.android.material:material:${Versions.materialDesign}"
 
+    const val expiringMap = "net.jodah:expiringmap:${Versions.expiringMap}"
+
     object Support {
         const val appCompat = "androidx.appcompat:appcompat:${Versions.androidSupport}"
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
@@ -50,6 +52,7 @@ object Dependencies {
         const val core = "io.reactivex.rxjava2:rxjava:${Versions.Rx.java}"
         const val android = "io.reactivex.rxjava2:rxandroid:${Versions.Rx.android}"
         const val kotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.Rx.kotlin}"
+        const val sharedPrefs = "com.f2prateek.rx.preferences2:rx-preferences:${Versions.Rx.sharedPrefs}"
     }
 
     const val threeTenAbp = "com.jakewharton.threetenabp:threetenabp:${Versions.threeTenAbp}"
@@ -65,6 +68,7 @@ object Dependencies {
         const val core = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
         const val converterMoshi = "com.squareup.retrofit2:converter-moshi:${Versions.retrofit}"
         const val adapterRxJava2 = "com.squareup.retrofit2:adapter-rxjava2:${Versions.retrofit}"
+        const val mock = "com.squareup.retrofit2:retrofit-mock:${Versions.retrofit}"
     }
 
 }

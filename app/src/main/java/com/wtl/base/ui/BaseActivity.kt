@@ -1,8 +1,9 @@
-package com.wtl.base
+package com.wtl.base.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.wtl.base.R
 import com.wtl.debug.ui.ContentViewWrapper
 import org.koin.android.ext.android.inject
 
@@ -31,4 +32,6 @@ abstract class BaseActivity : AppCompatActivity() {
             setSupportActionBar(toolbar)
         }
     }
+
+    fun Int.toPixelOffset(): Int = resources.getDimensionPixelOffset(this)
 }

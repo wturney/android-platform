@@ -97,6 +97,9 @@ dependencies {
     // Platform
     implementation(Dependencies.kotlinJdk7)
 
+    // Services
+    implementation(project(":api"))
+
     // Debug Drawer
     implementation(project(":debug-drawer-base"))
     debugImplementation(project(":debug-drawer-common"))
@@ -126,9 +129,13 @@ dependencies {
     implementation(Dependencies.Rx.core)
     implementation(Dependencies.Rx.kotlin)
     implementation(Dependencies.Rx.android)
+    implementation(Dependencies.Rx.sharedPrefs)
 
     // Date / Time
     implementation(Dependencies.threeTenAbp)
+
+    // Cache
+    implementation(Dependencies.expiringMap)
 
     // Network
     implementation(Dependencies.OkHttp.core)
@@ -136,6 +143,7 @@ dependencies {
     implementation(Dependencies.Retrofit.core)
     implementation(Dependencies.Retrofit.converterMoshi)
     implementation(Dependencies.Retrofit.adapterRxJava2)
+    add("mockImplementation", Dependencies.Retrofit.mock)
 
     // Logging
     implementation(Dependencies.timber)

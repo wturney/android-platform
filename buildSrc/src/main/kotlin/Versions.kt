@@ -12,11 +12,13 @@ object Versions {
     const val okHttp = "4.2.1"
     const val retrofit = "2.6.1"
     const val timber = "4.7.1"
+    const val expiringMap = "0.5.9"
 
     object Rx {
         const val java = "2.2.10"
         const val android = "2.1.0"
         const val kotlin = "2.4.0"
+        const val sharedPrefs = "2.0.0"
     }
 
     const val junit = "4.12"
