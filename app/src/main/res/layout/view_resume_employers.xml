@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="@layout/act_main">
+    tools:showIn="@layout/act_resume">
 
     <TextView
         android:layout_width="match_parent"
@@ -22,7 +22,6 @@
         android:paddingStart="@dimen/spacing_medium"
         android:paddingEnd="@dimen/spacing_medium"
         android:clipToPadding="false"
-        tools:listitem="@layout/view_resume_employer_item"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        tools:listitem="@layout/view_resume_employer_item" />
 
 </merge>

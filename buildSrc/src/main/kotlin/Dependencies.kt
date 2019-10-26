@@ -53,6 +53,11 @@ object Dependencies {
         const val android = "io.reactivex.rxjava2:rxandroid:${Versions.Rx.android}"
         const val kotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.Rx.kotlin}"
         const val sharedPrefs = "com.f2prateek.rx.preferences2:rx-preferences:${Versions.Rx.sharedPrefs}"
+        object Binding {
+            const val platform = "com.jakewharton.rxbinding3:rxbinding:${Versions.Rx.binding}"
+            const val core = "com.jakewharton.rxbinding3:rxbinding-core:${Versions.Rx.binding}"
+            const val material = "com.jakewharton.rxbinding3:rxbinding-material:${Versions.Rx.binding}"
+        }
     }
 
     const val threeTenAbp = "com.jakewharton.threetenabp:threetenabp:${Versions.threeTenAbp}"

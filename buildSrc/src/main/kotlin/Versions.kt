@@ -19,6 +19,7 @@ object Versions {
         const val android = "2.1.0"
         const val kotlin = "2.4.0"
         const val sharedPrefs = "2.0.0"
+        const val binding = "3.0.0"
     }
 
     const val junit = "4.12"

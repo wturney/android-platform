@@ -131,6 +131,11 @@ dependencies {
     implementation(Dependencies.Rx.android)
     implementation(Dependencies.Rx.sharedPrefs)
 
+    // RX Bindings
+    implementation(Dependencies.Rx.Binding.platform)
+    implementation(Dependencies.Rx.Binding.core)
+    implementation(Dependencies.Rx.Binding.material)
+
     // Date / Time
     implementation(Dependencies.threeTenAbp)
 

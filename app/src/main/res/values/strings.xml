@@ -16,4 +16,6 @@
     <string name="resume_education_institution">University of Washington, Tacoma</string>
     <string name="resume_education_degree">Bachelor of Science\nComputer Science and Systems\nUniversity of Washington, Tacoma</string>
     <string name="resume_education_field">Computer Science and Systems</string>
+    <string name="intent_unavailable_email">Unable to send email.</string>
+    <string name="intent_unavailable_dial">Unable to dial phone number.</string>
 </resources>

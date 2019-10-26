@@ -2,7 +2,7 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:showIn="@layout/act_main">
+    tools:showIn="@layout/act_resume">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,6 +15,7 @@
         android:textAppearance="?textAppearanceOverline" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/emailView"
         style="@style/Widget.AppName.Button.ListItem.Icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,6 +26,7 @@
         app:iconPadding="@dimen/spacing_medium" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/phoneView"
         style="@style/Widget.AppName.Button.ListItem.Icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -35,6 +37,7 @@
         app:iconPadding="@dimen/spacing_medium" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/locationView"
         style="@style/Widget.AppName.Button.ListItem.Icon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
