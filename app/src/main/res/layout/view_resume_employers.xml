@@ -22,6 +22,7 @@
         android:paddingStart="@dimen/spacing_medium"
         android:paddingEnd="@dimen/spacing_medium"
         android:clipToPadding="false"
-        tools:listitem="@layout/view_resume_employer_item" />
+        tools:listitem="@layout/view_resume_employer_item"
+        tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 </merge>

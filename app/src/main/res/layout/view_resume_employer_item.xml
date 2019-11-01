@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="@dimen/resume_employer_tile_width"
     android:layout_height="wrap_content"
-    android:clickable="true"
     android:defaultFocusHighlightEnabled="false"
-    android:focusable="true"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppName.Button.Mono">
 
@@ -20,7 +18,7 @@
         android:foreground="@drawable/bkg_selectable_rounded"
         android:padding="@dimen/spacing_medium"
         android:scaleType="centerInside"
-        android:tint="#FFF"
+        android:tint="@color/employerLogo"
         tools:src="@drawable/ic_employer_120dp" />
 
     <TextView

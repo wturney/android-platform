@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="@dimen/resume_hobby_tile_width"
     android:layout_height="wrap_content"
-    android:clickable="true"
     android:defaultFocusHighlightEnabled="false"
-    android:focusable="true"
     android:orientation="vertical"
     android:theme="@style/ThemeOverlay.AppName.Button.Mono"
     tools:ignore="UseCompoundDrawables">
@@ -21,7 +19,7 @@
         android:foreground="@drawable/bkg_selectable_rounded"
         android:importantForAccessibility="no"
         android:scaleType="centerInside"
-        android:tint="#FFF"
+        android:tint="@color/hobbyIcon"
         tools:src="@drawable/ic_dota2_60dp" />
 
     <TextView

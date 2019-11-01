@@ -1,7 +1,9 @@
 package com.wtl.base
 
 import android.app.Application
+import androidx.appcompat.app.AppCompatDelegate
 import com.jakewharton.threetenabp.AndroidThreeTen
+import com.wtl.base.pref.SettingPreferences
 import com.wtl.base.di.buildTypeModules
 import com.wtl.base.di.defaultModules
 import com.wtl.base.di.flavorModules
@@ -14,6 +16,7 @@ import timber.log.Timber
 class AppNameApplication : Application() {
 
     private val loggingTree: Timber.Tree by inject()
+    private val settings: SettingPreferences by inject()
 
     override fun onCreate() {
         super.onCreate()
@@ -28,6 +31,7 @@ class AppNameApplication : Application() {
         }
 
         initLogging()
+        initTheme()
     }
 
     private fun initDateTime() {
@@ -37,5 +41,15 @@ class AppNameApplication : Application() {
     private fun initLogging() {
         Timber.plant(loggingTree)
         Timber.tag(BuildConfig.LOG_TAG)
+    }
+
+    private fun initTheme() {
+        val nightMode =
+            AppCompatDelegate.setDefaultNightMode(
+                when (settings.nightMode.get()) {
+                    true -> AppCompatDelegate.MODE_NIGHT_YES
+                    false -> AppCompatDelegate.MODE_NIGHT_NO
+                }
+            )
     }
 }

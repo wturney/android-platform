@@ -45,6 +45,14 @@ class ResumeViewModel(
         events.map.value = "https://www.google.com/maps/@?api=1&map_action=map&center=47.6072228,-122.3398624&zoom=12"
     }
 
+    fun onEmployerClick(employer: Employer) {
+        events.employerDetails.value = employer
+    }
+
+    fun onHobbyClick(hobby: Hobby) {
+        events.hobbyDetails.value = hobby
+    }
+
     private fun loadEmployers() {
         disposables += repository.getEmployers()
             .observeOn(mainThread())
@@ -76,6 +84,8 @@ class ResumeViewModel(
     }
 
     class Events {
+        val employerDetails = SingleLiveEvent<Employer>()
+        val hobbyDetails = SingleLiveEvent<Hobby>()
         val dial = SingleLiveEvent<String>()
         val email = SingleLiveEvent<String>()
         val map = SingleLiveEvent<String>()

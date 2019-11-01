@@ -14,3 +14,4 @@ interface ResumeService {
     fun getHobbies(): Single<List<Hobby>>
 
 }
+    

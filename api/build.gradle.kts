@@ -1,6 +1,19 @@
 plugins {
-    id("java-library")
-    id("kotlin")
+    id("com.android.library")
+    kotlin("android")
+    kotlin("android.extensions")
+}
+
+android {
+    compileSdkVersion(BuildProperties.Android.compileSdkVersion)
+    buildToolsVersion(BuildProperties.Android.buildToolsVersion)
+
+    defaultConfig {
+        minSdkVersion(BuildProperties.Android.minSdkVersion)
+        targetSdkVersion(BuildProperties.Android.targetSdkVersion)
+        versionCode = 1
+        versionName = "1.0"
+    }
 }
 
 dependencies {
@@ -10,4 +23,7 @@ dependencies {
     // Support
     implementation(Dependencies.Retrofit.core)
     implementation(Dependencies.Retrofit.adapterRxJava2)
+
+    // Date / Time
+    implementation(Dependencies.threeTenAbp)
 }

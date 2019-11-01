@@ -2,7 +2,10 @@ package com.wtl.base.ui
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.util.TypedValue
+import android.view.Menu
 import android.widget.Toast
+import androidx.annotation.AttrRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
@@ -55,4 +58,8 @@ abstract class BaseActivity : AppCompatActivity() {
     fun Int.toPixelOffset(): Int = resources.getDimensionPixelOffset(this)
     fun Int.toColor(): Int = ContextCompat.getColor(this@BaseActivity, this)
     fun Int.toDrawable(): Drawable? = ContextCompat.getDrawable(this@BaseActivity, this)
+    fun Int.toColorFromAttr(typedValue: TypedValue = TypedValue(), resolveRefs: Boolean = true): Int {
+        theme.resolveAttribute(this, typedValue, resolveRefs)
+        return typedValue.data
+    }
 }

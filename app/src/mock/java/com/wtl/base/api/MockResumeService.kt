@@ -30,11 +30,13 @@ class MockResumeService(
         Employer(
             1,
             "TRED",
+            null,
             "Lead Mobile Engineer"
         ),
         Employer(
             2,
             "Recreational Equipment, Inc.",
+            "REI Co-op",
             "Senior Software Engineer"
         )
     )
