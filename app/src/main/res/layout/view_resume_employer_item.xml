@@ -27,9 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_very_small"
         android:ellipsize="end"
-        android:includeFontPadding="false"
         android:lines="1"
-        android:textAppearance="@style/TextAppearance.AppName.Body1"
+        android:textAppearance="?textAppearanceBody1"
         tools:text="Recreational Equipment Inc." />
 
     <TextView
@@ -37,9 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ellipsize="end"
-        android:includeFontPadding="false"
         android:lines="1"
-        android:textAppearance="@style/TextAppearance.AppName.Caption"
+        android:textAppearance="?textAppearanceCaption"
         tools:text="Senior Software Engineer" />
 
 </LinearLayout>

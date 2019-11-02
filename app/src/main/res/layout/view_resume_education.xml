@@ -18,8 +18,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_medium"
         android:layout_marginEnd="@dimen/spacing_medium"
-        android:includeFontPadding="false"
-        android:paddingBottom="@dimen/spacing_small"
         android:text="@string/resume_education_degree"
         android:textAppearance="?textAppearanceBody1" />
 

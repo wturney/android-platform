@@ -1,10 +1,14 @@
 package com.wtl.base.api
 
+import com.wtl.base.api.model.AppPlatform
 import com.wtl.base.api.model.Employer
 import com.wtl.base.api.model.Hobby
+import com.wtl.base.api.model.Role
 import com.wtl.base.api.service.ResumeService
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
+import org.threeten.bp.LocalDate
+import org.threeten.bp.Month
 import retrofit2.Response
 import retrofit2.mock.BehaviorDelegate
 import retrofit2.mock.Calls
@@ -31,13 +35,84 @@ class MockResumeService(
             1,
             "TRED",
             null,
-            "Lead Mobile Engineer"
+            listOf(
+                Role(
+                    "Lead Mobile Engineer",
+                    listOf(
+                        "Created and maintained the TRED native apps (Android, iOS) and their associated build pipelines.",
+                        "Oversaw interviewing and on-boarding of mobile developers.",
+                        "Provided limited developer support for server-side and front-end projects."
+                    ),
+                    listOf(
+                        "Android",
+                        "iOS",
+                        "Kotlin",
+                        "Swift",
+                        "Jenkins",
+                        "Bitrise",
+                        "TypeScript",
+                        "Node.js",
+                        "React.js"
+                    ),
+                    listOf(
+                        Pair(LocalDate.of(2018, Month.JANUARY, 1), LocalDate.of(2019, Month.NOVEMBER, 1))
+                    )
+
+                )
+            ),
+            "https://www.tred.com",
+            mapOf(
+                AppPlatform.IOS to "https://apps.apple.com/us/app/tred/id1070071394",
+                AppPlatform.ANDROID to "https://play.google.com/store/apps/details?id=com.tred.mobile"
+            )
         ),
         Employer(
             2,
             "Recreational Equipment, Inc.",
             "REI Co-op",
-            "Senior Software Engineer"
+            listOf(
+                Role(
+                    "Senior Software Engineer — Mobile",
+                    listOf(
+                        "Maecenas laoreet efficitur accumsan.",
+                        "Sed vitae placerat nunc. Nunc vehicula elementum risus sit amet consectetur. Integer luctus dui vel elementum euismod. Ut pretium arcu et dolor dapibus, vitae finibus metus pretium. Praesent ac mi mattis, semper sapien at, iaculis magna. Maecenas nec quam gravida, viverra nibh quis, varius nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean ullamcorper ultricies semper."
+                    ),
+                    listOf(
+                        "Android",
+                        "Java",
+                        "Kotlin",
+                        "Jenkins"
+                    ),
+                    listOf(
+                        Pair(LocalDate.of(2015, Month.FEBRUARY, 1), LocalDate.of(2016, Month.OCTOBER, 1))
+                    )
+                ),
+                Role(
+                    "Senior Software Engineer — DevOps",
+                    listOf(
+                        "Praesent ac mi mattis, semper sapien at, iaculis magna.",
+                        "Integer luctus dui vel elementum euismod. Ut pretium arcu et dolor dapibus, vitae finibus metus pretium."
+                    ),
+                    listOf(
+                        "Jenkins",
+                        "Docker",
+                        "AWS",
+                        "EC2",
+                        "ECS",
+                        "RDS",
+                        "Java",
+                        "Kotlin"
+                    ),
+                    listOf(
+                        Pair(LocalDate.of(2014, Month.AUGUST, 1), LocalDate.of(2015, Month.FEBRUARY, 1)),
+                        Pair(LocalDate.of(2016, Month.OCTOBER, 1), LocalDate.of(2017, Month.JUNE, 1))
+                    )
+                )
+            ),
+            "https://www.rei.com",
+            mapOf(
+                AppPlatform.ANDROID to "https://play.google.com/store/apps/details?id=com.ubermind.rei"
+            )
         )
     )
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/spacing_medium"
+    android:paddingTop="@dimen/spacing_small"
+    android:paddingEnd="@dimen/spacing_medium">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bullet"
+        android:textAppearance="?textAppearanceBody1" />
+
+    <TextView
+        android:id="@+id/descriptionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_small"
+        android:textAppearance="?textAppearanceBody1"
+        tools:text="Maecenas laoreet efficitur accumsan. Sed vitae placerat nunc. Nunc vehicula elementum risus sit amet consectetur. Integer luctus dui vel elementum euismod. Ut pretium arcu et dolor dapibus, vitae finibus metus pretium. Praesent ac mi mattis, semper sapien at, iaculis magna. Maecenas nec quam gravida, viverra nibh quis, varius nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean ullamcorper ultricies semper." />
+</LinearLayout>

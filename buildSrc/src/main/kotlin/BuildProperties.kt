@@ -10,8 +10,8 @@ object BuildProperties {
     object Android {
         const val applicationId = "com.wtl.base"
         const val minSdkVersion = 23
-        const val compileSdkVersion = 28
-        const val targetSdkVersion = 28
+        const val compileSdkVersion = 29
+        const val targetSdkVersion = 29
         const val buildToolsVersion = "29.0.2"
     }
 

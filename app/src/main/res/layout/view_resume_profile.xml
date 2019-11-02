@@ -19,5 +19,5 @@
         android:paddingStart="@dimen/spacing_medium"
         android:paddingEnd="@dimen/spacing_medium"
         android:text="@string/resume_profile_description"
-        android:textAppearance="@style/TextAppearance.AppName.Body1" />
+        android:textAppearance="?textAppearanceBody1" />
 </merge>

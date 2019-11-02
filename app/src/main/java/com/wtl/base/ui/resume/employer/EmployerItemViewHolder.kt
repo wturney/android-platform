@@ -29,7 +29,7 @@ class EmployerItemViewHolder(
         super.bind(item)
 
         itemView.employerNameView.text = item.employer.name
-        itemView.roleNameView.text = item.employer.role
+        itemView.roleNameView.text = item.employer.roles.first().name
 
         ViewCompat.setBackgroundTintList(
             itemView.employerLogoView,

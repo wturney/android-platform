@@ -24,13 +24,6 @@
             android:orientation="vertical"
             android:paddingBottom="@dimen/spacing_large">
 
-            <include
-                layout="@layout/view_employer_role"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/spacing_medium"
-                android:layout_marginEnd="@dimen/spacing_medium" />
-
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

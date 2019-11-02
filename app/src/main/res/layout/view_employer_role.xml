@@ -1,31 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/startDateView"
-        android:layout_width="wrap_content"
+        android:id="@+id/roleNameView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppName.Caption"
-        tools:text="Sept. 2017" />
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:paddingTop="@dimen/spacing_medium"
+        android:textAppearance="?textAppearanceHeadline6"
+        tools:text="Senior Software Engineer" />
 
-    <View
-        android:layout_width="50dp"
-        android:layout_height="1px"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="@dimen/spacing_small"
-        android:layout_marginEnd="@dimen/spacing_small"
-        android:background="@color/primary" />
+    <LinearLayout
+        android:id="@+id/roleDatesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/roleDescriptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:orientation="vertical" />
 
     <TextView
-        android:id="@+id/endDateView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:lines="1"
-        android:textAppearance="@style/TextAppearance.AppName.Caption"
-        tools:text="Present" />
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:text="@string/resume_role_technologies_header"
+        android:textAppearance="?textAppearanceOverline" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/roleTechnologiesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        app:chipSpacingVertical="0dp" />
 
 </LinearLayout>

@@ -19,4 +19,6 @@
     <string name="intent_unavailable_email">Unable to send email.</string>
     <string name="intent_unavailable_dial">Unable to dial phone number.</string>
     <string name="settings_night_mode">Night mode</string>
+    <string name="bullet">•</string>
+    <string name="resume_role_technologies_header">Technologies</string>
 </resources>
