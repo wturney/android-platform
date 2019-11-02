@@ -4,5 +4,5 @@
     style="@style/Widget.MaterialComponents.Chip.Action"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    app:chipMinHeight="38dp"
-    app:chipCornerRadius="@dimen/spacing_very_small" />
+    app:chipCornerRadius="@dimen/round_corner_radius"
+    app:chipMinHeight="38dp" />

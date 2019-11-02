@@ -16,14 +16,13 @@
         android:textAppearance="?textAppearanceHeadline6"
         tools:text="Senior Software Engineer" />
 
-    <LinearLayout
+    <TableLayout
         android:id="@+id/roleDatesLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/spacing_medium"
         android:layout_marginTop="@dimen/spacing_medium"
-        android:layout_marginEnd="@dimen/spacing_medium"
-        android:orientation="vertical" />
+        android:layout_marginEnd="@dimen/spacing_medium" />
 
     <LinearLayout
         android:id="@+id/roleDescriptionsLayout"

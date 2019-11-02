@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.LinearLayout
+import android.widget.TableLayout
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
 import com.wtl.base.R
@@ -68,7 +69,7 @@ class EmployerActivity : BaseActivity() {
                 ) as LinearLayout
                 dateLayout.startView.text = Formatters.EMPLOYMENT_DATE.format(date.first)
                 dateLayout.endView.text = date.second?.let { Formatters.EMPLOYMENT_DATE.format(it) } ?: "Present"
-                roleLayout.roleDatesLayout.addView(dateLayout, LinearLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT))
+                roleLayout.roleDatesLayout.addView(dateLayout, TableLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT))
             }
 
             role.description.forEach { desc ->
@@ -95,7 +96,7 @@ class EmployerActivity : BaseActivity() {
                 roleLayout,
                 LinearLayout.LayoutParams(MATCH_PARENT, WRAP_CONTENT)
                     .apply {
-                        topMargin = if (index > 0) R.dimen.spacing_large.toPixelOffset() else 0
+                        topMargin = if (index > 0) R.dimen.spacing_medium.toPixelOffset() else 0
                     }
             )
         }

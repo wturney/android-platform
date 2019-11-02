@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/spacing_medium"
     android:layout_marginTop="@dimen/spacing_medium"
-    android:layout_marginEnd="@dimen/spacing_medium"
-    android:orientation="horizontal">
+    android:layout_marginEnd="@dimen/spacing_medium">
 
     <TextView
         android:id="@+id/startView"
@@ -16,7 +15,7 @@
         tools:text="Sept. 2017" />
 
     <View
-        android:layout_width="50dp"
+        android:layout_width="30dp"
         android:layout_height="1px"
         android:layout_gravity="center_vertical"
         android:layout_marginStart="@dimen/spacing_small"
@@ -31,4 +30,4 @@
         android:textAppearance="?textAppearanceOverline"
         tools:text="Present" />
 
-</LinearLayout>
+</TableRow>

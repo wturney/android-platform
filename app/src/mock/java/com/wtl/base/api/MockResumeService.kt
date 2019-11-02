@@ -72,10 +72,11 @@ class MockResumeService(
             "REI Co-op",
             listOf(
                 Role(
-                    "Senior Software Engineer — Mobile",
+                    "Senior Software Engineer (Mobile)",
                     listOf(
                         "Maecenas laoreet efficitur accumsan.",
-                        "Sed vitae placerat nunc. Nunc vehicula elementum risus sit amet consectetur. Integer luctus dui vel elementum euismod. Ut pretium arcu et dolor dapibus, vitae finibus metus pretium. Praesent ac mi mattis, semper sapien at, iaculis magna. Maecenas nec quam gravida, viverra nibh quis, varius nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean ullamcorper ultricies semper."
+                        "Sed vitae placerat nunc. Nunc vehicula elementum risus sit amet consectetur.",
+                        "Ut pretium arcu et dolor dapibus, vitae finibus metus pretium."
                     ),
                     listOf(
                         "Android",
@@ -88,10 +89,10 @@ class MockResumeService(
                     )
                 ),
                 Role(
-                    "Senior Software Engineer — DevOps",
+                    "Senior Software Engineer (DevOps)",
                     listOf(
                         "Praesent ac mi mattis, semper sapien at, iaculis magna.",
-                        "Integer luctus dui vel elementum euismod. Ut pretium arcu et dolor dapibus, vitae finibus metus pretium."
+                        "Integer luctus dui vel elementum euismod."
                     ),
                     listOf(
                         "Jenkins",
